@@ -14,154 +14,130 @@
 
 <body>
   <!-- navigation bar -->
-  <nav class="navbar navbar-dark bg-dark fixed-top">
+  <nav class="navbar bg-dark container-fluid">
     <div class="container-fluid">
-      <div class="navbar-brand ">
-        <img class="d-none d-lg-inline-block" src="pragyan_logo.png" height="70" width="70">
-
-        Malaviya PraGyan 1.0
-
+      <!-- navbar title (logo + title brand) -->
+      <div class="d-flex align-items-center title m-1 mx-3">
+        <img class="d-none d-md-flex" src="/pragyan_logo.png" width="70" height="70">
+        <span class="d-none d-md-block mx-3 text-light h5">Malaviya Pragyan 1.0</span>
+        <span class="d-md-none text-light">Malaviya Pragyan 1.0</span>
       </div>
-      <!-- Navbar links -->
-      <ul class="nav justify-content-end">
-        <li class="nav-item d-none d-lg-inline-flex">
-          <a class="nav-link link-light" href="/">Home</a>
-        </li>
-        <li class="nav-item d-none d-lg-inline-flex">
-          <a class="nav-link link-light" href="http://www.mmmut.ac.in/">University Official</a>
-        </li>
-        <li class="nav-item d-none dropdown d-lg-inline-flex">
-          <a class="nav-link link-light" data-bs-toggle="dropdown" href="#" role="button"
-            aria-expanded="false">Programming Zone</a>
-          <ul class="dropdown-menu shadow">
-            <li><a class="dropdown-item" href="upcoming.html">Get Started</a></li>
-            <li><a class="dropdown-item" href="upcoming.html">Video Tutorials</a></li>
-            <li><a class="dropdown-item" href="upcoming.html">Online Compiler</a></li>
-            <li><a class="dropdown-item" href="upcoming.html">Coding Contest</a></li>
-          </ul>
-        </li>
-        <li class="nav-item d-none d-lg-inline-flex">
-          <a class="nav-link link-light" href="#">About Us</a>
-        </li>
-        <!-- drop menu for smaller screen -->
-        <li id="show_btn" class="nav-item dropdown rounded-2">
-          <a class="nav-link link-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span
-              class="navbar-toggler-icon"></span></a>
-          <ul class="dropdown-menu shadow">
-            <li><a class="dropdown-item" href="/">Home</a></li>
-            <li><a class="dropdown-item" href="http://www.mmmut.ac.in/">University Official</a></li>
-            <li><a class="dropdown-item" href="upcoming.html">Programming Zone</a></li>
-            <li><a class="dropdown-item" href="upcoming.html">About Us</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- caresol -->
-  <div class="slider text-center mt-5">
-    <div class="row row-cols-1 row-cols-lg-2 mt-lg-5">
-      <div class="col col-lg-8">
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-              aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-              aria-label="Slide 6"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img src="pageGraphics/Slider/IMG_20231001_103839.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="pageGraphics/Slider/IMG_20231001_135738.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="pageGraphics/Slider/IMG_20231001_135839.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="pageGraphics/Slider/IMG_20231001_135912.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>4 slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="pageGraphics/Slider/IMG_20231001_140028.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>5 slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="pageGraphics/Slider/IMG_20231001_140525.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>6 slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <div>
+        <ul class="d-none d-lg-flex list-unstyled me-3 mb-2 mb-lg-0">
+          <li class="nav-item mx-2"><a class="nav-link text-light" href="">Home</a></li>
+          <li class="nav-item mx-2"><a class="nav-link text-light" href="/pages/code.html">Coding Arena</a></li>
+          <li class="nav-item mx-2"><a class="nav-link text-light" href="http://www.mmmut.ac.in/">mmmut.ac.in</a></li>
+          <li class="nav-item mx-2"><a class="nav-link text-light" href="">About Us</a></li>
+        </ul>
+      </div>
+      <div class="d-lg-none">
+        <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg
+          xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+          class="bi bi-layout-text-sidebar text-light" viewBox="0 0 16 16">
+          <path
+            d="M3.5 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM3 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+          <path
+            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm12-1v14h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 0H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h9V1z" />
+        </svg></div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+link menu body
         </div>
       </div>
-      <div class="col">
-        <h3>Malaviya Pragyan</h3>
       </div>
     </div>
+  </nav>
+  <!-- caresol -->
+
+  <div class="container-fluid sliderMain p-0">
+    <div class="container-fluid p-0">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="/pageGraphics/Slider/IMG_20231001_103839.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Slide 1</h5>
+              <p>“Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime”–
+                Maimonides</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="pageGraphics/Slider/IMG_20231001_135738.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Slide 2</h5>
+              <p>“Change is the end result of all true learning.” – Leo Buscaglia</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="pageGraphics/Slider/IMG_20231001_135839.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Slide 3</h5>
+              <p>“Education is the kindling of a flame, not the filling of a vessel.”– Socrates</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="pageGraphics/Slider/IMG_20231001_135912.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Slide 4</h5>
+              <p>“Either you run the day or the day runs you.” – Jim Rohn</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="pageGraphics/Slider/IMG_20231001_140028.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Slide 5</h5>
+              <p>“Education is the most powerful weapon which you can use to change the world.” – Nelson Mandela</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="pageGraphics/Slider/IMG_20231001_140525.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Slide 6</h5>
+              <p>“Learning is not attained by chance; it must be sought for with ardour and diligence.”– Abigail Adams
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="p-0">
+      anup jaiswal
+    </div>
   </div>
+
 
 
   <!-- Main hero -->
-  <div class="container my-5 d-none">
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 text-secondary fw-bold lh-1">Welcome To Malaviya Pra-Gyan ,</h1>
-        <p class="lead">Welcome , here you will get all your academic needs and study resources for University Students.
-          My aim is to provide free access to study materials and other required educational stuffs.
-          . This website is developed and managed by a non-profit organisation , of <b class="text-primary">Anup
-            Jaiswal</b>. <br> Note :- This is not a governtment funded Project. It is completely managed by a
-          Students-Organisation of MMMUT University. </p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-          <button type="button" class="mmmut-official p-2 rounded-2 border border-dark"><a
-              href="https://www.mmmut.ac.in/">mmmut.ac.in</a></button>
-          <button type="button" class="mmmut-official p-2 rounded-2 border border-dark">Developer Profile</button>
-        </div>
-      </div>
-      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-        <img class="rounded-lg-3" src="sample_img.jpg" alt="college photo" width="720">
-      </div>
-    </div>
-  </div>
-  <!-- main hero ends here -->
+
+
 
 
   <!-- Contribution Notice -->
@@ -287,26 +263,27 @@
                 <span class=" mb-3 disabled text-secondary fw-bold" href="">Main</span>
                 <a class="nav-link mb-2" href="index.html">Home</a>
                 <a class="nav-link mb-2" href="">Blogs</a>
-                <a class="nav-link mb-2" href="http://www.mmmut.ac.in/index">University Official</a>
-                <a class="nav-link mb-2" href="#">About Us</a>
+                <a class="nav-link mb-2" target="_blank" href="http://www.mmmut.ac.in/index">University Official</a>
+                <a class="nav-link mb-2" target="_blank" href="#">About Us</a>
               </div>
             </div>
             <div class="site-map col-3">
               <div class="d-flex flex-column">
                 <span class=" mb-3 disabled text-secondary fw-bold" href="">More</span>
                 <a class="nav-link mb-2" href="https://www.vlab.co.in/">IIT Virtual Lab</a>
-                <a class="nav-link mb-2" href="">Code-Chef</a>
-                <a class="nav-link mb-2" href="">CodeForces</a>
-                <a class="nav-link mb-2" href="">Online Complier</a>
+                <a class="nav-link mb-2" target="_blank" href="https://www.codechef.com/">Code-Chef</a>
+                <a class="nav-link mb-2" target="_blank" href="https://codeforces.com/">CodeForces</a>
+                <a class="nav-link mb-2" target="_blank" href="">Online Complier</a>
               </div>
             </div>
             <div class="site-map col-3">
               <div class="d-flex flex-column">
                 <span class=" mb-3 disabled text-secondary fw-bold" href="">Govt. Sites</span>
-                <a class="nav-link mb-2" href="https://gate.iitkgp.ac.in/">GATE</a>
-                <a class="nav-link mb-2" href="https://upsc.gov.in/">UPSC</a>
-                <a class="nav-link mb-2" href="http://172.16.1.250:8081/jasperserver/login.html">M.M.M.U.T Result</a>
-                <a class="nav-link mb-2" href="https://www.sarkariresult.com/">Sarkari Result</a>
+                <a class="nav-link mb-2" target="_blank" href="https://gate.iitkgp.ac.in/">GATE</a>
+                <a class="nav-link mb-2" target="_blank" href="https://upsc.gov.in/">UPSC</a>
+                <a class="nav-link mb-2" target="_blank"
+                  href="http://172.16.1.250:8081/jasperserver/login.html">M.M.M.U.T Result</a>
+                <a class="nav-link mb-2" target="_blank" href="https://www.sarkariresult.com/">Sarkari Result</a>
               </div>
             </div>
           </div>
